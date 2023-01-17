@@ -38,11 +38,12 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O projeto é uma implementação de uma API de inventário feita com .NET Core, JWT (JSON Web Token) e Entity Framework Core 3.1 
 
-**ProdutosController.cs**
 
-<p align="left">GET - Tentando retornar produtos sem o token: <img src="./imgs/acesso_sem_usar_token.jpg" width="400"></p>
-<br />
-<p align="left">Atualiza um registro identificado pelo id recebido: <img src="./imgs/PUT_atualizando_registro.png" width="400"></p><br />
+#### GET - Tentando retornar produtos sem o token:
+<p><img src="./imgs/acesso_sem_usar_token.jpg" width="400"></p>
+
+#### Atualiza um registro identificado pelo id recebido:
+<p><img src="./imgs/PUT_atualizando_registro.png" width="400"></p>
 ```
         // Atualiza um registro identificado pelo id recebido
         [HttpPut("{id}")]
@@ -66,7 +67,8 @@ O projeto é uma implementação de uma API de inventário feita com .NET Core, 
         }
 ```
 
-<p align="left">Rota api/produtos Permite acesso anônimo ou seja sem autenticação <img src="./imgs/acesso_ao_endpoint_api_produtos.jpg" width="400"></p><br />
+#### Rota api/produtos Permite acesso anônimo ou seja sem autenticação 
+<p><img src="./imgs/acesso_ao_endpoint_api_produtos.jpg" width="400"></p>
 ```
         // AllowAnonymous – Permite acesso anônimo ou seja sem autenticação
         [AllowAnonymous]
@@ -78,7 +80,8 @@ O projeto é uma implementação de uma API de inventário feita com .NET Core, 
         }
 ```
 
-<p align="left">GET - Retornando todos produtos com autenticação (usuário previamente cadastrado na base de dados e token válido): <img src="./imgs/retorno_JSON_com_acesso_autenticado.png" width="400"></p><br />
+#### GET - Retornando todos produtos com autenticação (usuário previamente cadastrado na base de dados e token válido): 
+<p><img src="./imgs/retorno_JSON_com_acesso_autenticado.png" width="400"></p>
 ```
         // Authorize(Roles=”Perfil1,Perfil2”) – Exige que o usuário esteja autenticado e que faça parte de um dos perfis definidos.
         [HttpGet("todos")]
@@ -95,7 +98,8 @@ O projeto é uma implementação de uma API de inventário feita com .NET Core, 
         }
   ```
 
-<p align="left">GET - Retornando produto pelo id: <img src="./imgs/retorno_produto_por_id.png" width="400"></p><br />
+#### GET - Retornando produto pelo id: 
+<p><img src="./imgs/retorno_produto_por_id.png" width="400"></p>
 ```
         // Retornando produto pelo Id recebido
         [HttpGet("{id}")]
@@ -112,7 +116,8 @@ O projeto é uma implementação de uma API de inventário feita com .NET Core, 
         }
 ```
 
-<p align="left">POST - cadastrando produto: <img src="./imgs/POST_cadastrando_produto.png" width="400"></p><br />
+#### POST - cadastrando produto: 
+<p><img src="./imgs/POST_cadastrando_produto.png" width="400"></p>
 ```
         // POST api/<controller>
         // No método POST estamos retornando um código de status 201 gerado pelo método CreatedAtAction quando um produto for criado.
@@ -130,7 +135,8 @@ O projeto é uma implementação de uma API de inventário feita com .NET Core, 
         }
 ```
 
-<p align="left">DELETE - Apagando produto pelo id: <img src="./imgs/DELETE_apagando_registro_por_id.png" width="400"></p><br />
+#### DELETE - Apagando produto pelo id: 
+<p><img src="./imgs/DELETE_apagando_registro_por_id.png" width="400"></p>
 ```
         [HttpDelete("{id}")]
         public async Task<ActionResult<Produto>> DeleteProduto(int id)
