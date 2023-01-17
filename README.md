@@ -44,8 +44,9 @@ O projeto é uma implementação de uma API de inventário feita com .NET Core, 
 
 #### Atualiza um registro identificado pelo id recebido:
 <p><img src="./imgs/PUT_atualizando_registro.png" width="400"></p>
+
 ```
-        // Atualiza um registro identificado pelo id recebido
+         // Atualiza um registro identificado pelo id recebido
         [HttpPut("{id}")]
         public async Task<IActionResult> PutProduto(int id, Produto produto)
         {
@@ -96,7 +97,7 @@ O projeto é uma implementação de uma API de inventário feita com .NET Core, 
 
             return Ok(produtos.ToList());
         }
-  ```
+```
 
 #### GET - Retornando produto pelo id: 
 <p><img src="./imgs/retorno_produto_por_id.png" width="400"></p>
