@@ -38,9 +38,14 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O projeto é uma implementação de uma API de inventário feita com .NET Core, JWT (JSON Web Token) e Entity Framework Core 3.1 
 
+#### Rota aberta api/produtos Permite acesso anônimo ou seja sem autenticação 
+<p><img src="./imgs/acesso_ao_endpoint_api_produtos.jpg" ></p>
 
-#### GET - Tentando retornar produtos sem o token:
+#### GET - Tentando retornar produtos (rota protegida) sem o token:
 <p><img src="./imgs/acesso_sem_usar_token.jpg" ></p>
+
+#### GET - Gerando o token com usuário previamente cadastrado:
+<p><img src="./imgs/gerando_token_com_usuario_existente.png" ></p>
 
 #### Atualiza um registro identificado pelo id recebido:
 <p><img src="./imgs/PUT_atualizando_registro.png" ></p>
@@ -67,9 +72,6 @@ O projeto é uma implementação de uma API de inventário feita com .NET Core, 
             return Ok(produto);
         }
 ```
-
-#### Rota api/produtos Permite acesso anônimo ou seja sem autenticação 
-<p><img src="./imgs/acesso_ao_endpoint_api_produtos.jpg" ></p>
 
 ```
          // AllowAnonymous – Permite acesso anônimo ou seja sem autenticação
