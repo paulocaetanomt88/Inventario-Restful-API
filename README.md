@@ -40,10 +40,10 @@ O projeto é uma implementação de uma API de inventário feita com .NET Core, 
 
 
 #### GET - Tentando retornar produtos sem o token:
-<p><img src="./imgs/acesso_sem_usar_token.jpg" width="400"></p>
+<p><img src="./imgs/acesso_sem_usar_token.jpg" ></p>
 
 #### Atualiza um registro identificado pelo id recebido:
-<p><img src="./imgs/PUT_atualizando_registro.png" width="400"></p>
+<p><img src="./imgs/PUT_atualizando_registro.png" ></p>
 
 ```
          // Atualiza um registro identificado pelo id recebido
@@ -69,7 +69,7 @@ O projeto é uma implementação de uma API de inventário feita com .NET Core, 
 ```
 
 #### Rota api/produtos Permite acesso anônimo ou seja sem autenticação 
-<p><img src="./imgs/acesso_ao_endpoint_api_produtos.jpg" width="400"></p>
+<p><img src="./imgs/acesso_ao_endpoint_api_produtos.jpg" ></p>
 
 ```
          // AllowAnonymous – Permite acesso anônimo ou seja sem autenticação
@@ -83,7 +83,7 @@ O projeto é uma implementação de uma API de inventário feita com .NET Core, 
 ```
 
 #### GET - Retornando todos produtos com autenticação (usuário previamente cadastrado na base de dados e token válido): 
-<p><img src="./imgs/retorno_JSON_com_acesso_autenticado.png" width="400"></p>
+<p><img src="./imgs/retorno_JSON_com_acesso_autenticado.png" ></p>
 
 ```
          // Authorize(Roles=”Perfil1,Perfil2”) – Exige que o usuário esteja autenticado e que faça parte de um dos perfis definidos.
@@ -102,7 +102,7 @@ O projeto é uma implementação de uma API de inventário feita com .NET Core, 
 ```
 
 #### GET - Retornando produto pelo id: 
-<p><img src="./imgs/retorno_produto_por_id.png" width="400"></p>
+<p><img src="./imgs/retorno_produto_por_id.png" ></p>
 
 ```
          // Retornando produto pelo Id recebido
@@ -121,7 +121,7 @@ O projeto é uma implementação de uma API de inventário feita com .NET Core, 
 ```
 
 #### POST - cadastrando produto: 
-<p><img src="./imgs/POST_cadastrando_produto.png" width="400"></p>
+<p><img src="./imgs/POST_cadastrando_produto.png" ></p>
 
 ```
          // POST api/<controller>
@@ -141,7 +141,7 @@ O projeto é uma implementação de uma API de inventário feita com .NET Core, 
 ```
 
 #### DELETE - Apagando produto pelo id: 
-<p><img src="./imgs/DELETE_apagando_registro_por_id.png" width="400"></p>
+<p><img src="./imgs/DELETE_apagando_registro_por_id.png" ></p>
 
 ```
          [HttpDelete("{id}")]
