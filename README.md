@@ -1,5 +1,5 @@
 # Inventario-Restful-API
-ASP.NET Core 3.1 - CRUD : Web API com EF Core e Tokens JWT
+C# .NET Core 3.1 - CRUD : Web API com EF Core e Tokens JWT
 
 <p align="center"><img src="./imgs/ASPNETRESTfulAPI.png" width="400"></p>
 
