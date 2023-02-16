@@ -8,7 +8,6 @@ C# .NET Core 3.1 - CRUD : Web API com EF Core e Tokens JWT
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 - **Banco de Dados**: [MS SQL Server 2022](https://www.microsoft.com/pt-br/sql-server/sql-server-2022)
 - **IDE de desenvolvimento**: [MS Visual Studio 2022](https://visualstudio.microsoft.com/pt-br/vs/)
-- [ASP.NET](https://dotnet.microsoft.com/apps/aspnet/)
 - [JWT Tokens](https://jwt.io/)
 - [EF Core 3.1](https://docs.microsoft.com/en-us/ef/core/)
 
